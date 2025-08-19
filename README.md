@@ -1,2 +1,2 @@
 # tryhackme_CTFs
-Write-ups &amp;&amp; walkthroughs for TryHackMe rooms
+Collection of CTF writeups from TryHackMe rooms.
