@@ -162,7 +162,7 @@ less '/home/rick/second ingredients'
 **Explanation of `less`:**
 - `less` lets you read files even if other commands (like `cat`) are blocked.
 - Scrolls through content interactively without executing anything.
-- [less-about][https://en.wikipedia.org/wiki/Less_(Unix)]
+- [less-about](https://en.wikipedia.org/wiki/Less_(Unix)
 
 ---
 
