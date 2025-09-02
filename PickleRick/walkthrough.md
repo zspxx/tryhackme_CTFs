@@ -18,8 +18,8 @@ PORT   STATE SERVICE VERSION
 - `-T4`: Set the speed of the scan (faster than default)
 - `-sC`: Run default NSE scripts for discovery
 - `-sV`: Attempt to determine the version of services
-- `-A`: Enable OS detection, version detection, script scanning, and traceroute
-- `-p-`: Scan all 65535 TCP ports
+- `-A`: Enable OS detection, version detection, script scanning.
+- `-p-`: Scan all ports
 - SSH (22) is open → we may need credentials later.
 - HTTP (80) is open → a website exists to explore.
 
