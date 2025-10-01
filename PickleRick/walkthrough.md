@@ -48,12 +48,14 @@ We take note of this username to use later for login.
 We use `gobuster` to enumerate hidden directories:
 
 ```bash
-sudo gobuster dir -u 10.201.74.72 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+sudo gobuster dir -u 10.201.74.72 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,js,py,html
+
 ```
 
 **Command Breakdown:**
 - `-u`: Target URL
 - `-w`: Wordlist for brute-forcing directories
+- `-x`: File extensions to check
 
 **Sample Output:**
 ```
