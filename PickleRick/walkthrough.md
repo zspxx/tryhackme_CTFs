@@ -20,7 +20,7 @@ PORT   STATE SERVICE VERSION
 - `-sV`: Attempt to determine the version of services
 - `-A`: Enable OS detection, version detection, script scanning.
 - `-p-`: Scan all ports
-- SSH (22) is open → we may need credentials later.
+- SSH (Secure-Shell) (22) is open → we may need credentials later.
 - HTTP (80) is open → a website exists to explore.
 
 ---
@@ -33,7 +33,7 @@ We launch a browser (Firefox in our case) and type:
 http://10.201.75.114
 ```
 
-This loads the main webpage. Inspecting the page source reveals a username:
+This loads the main webpage. Inspecting (looking inside the website's code) the page source reveals a username:
 
 ```
 Username: R1ckRul3s
@@ -53,9 +53,11 @@ sudo gobuster dir -u 10.201.74.72 -w /usr/share/wordlists/dirbuster/directory-li
 ```
 
 **Command Breakdown:**
+- `dir` directory enumeration.
 - `-u`: Target URL
 - `-w`: Wordlist for brute-forcing directories
 - `-x`: File extensions to check
+- `sudo` allows running commands as the root user.
 
 **Sample Output:**
 ```
@@ -76,6 +78,9 @@ Checking `robots.txt` via browser or curl:
 ```bash
 curl http://10.201.75.114/robots.txt
 ```
+
+**Command Breakdown:**
+- `curl` requests a webpage without using a browser.
 
 **Output:**
 ```
